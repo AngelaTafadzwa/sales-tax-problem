@@ -32,8 +32,8 @@ public class TaxCalculatorTest {
 		taxCalculator = new TaxCalculator(items);
 		taxCalculator.computeTax();
 		
-		Assert.assertEquals(825, taxCalculator.getTotalAll());
-		Assert.assertEquals(75, taxCalculator.getTotalAll());
+		Assert.assertEquals(825.0, taxCalculator.getTotalAll());
+		Assert.assertEquals(75.0, taxCalculator.getSalesTaxes());
 	}
 
 }
